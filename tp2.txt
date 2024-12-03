@@ -19,29 +19,6 @@ int Longueur(char *ch) {
     return i; 
 } 
  
-void ChargerTab(char *p, char Tab[]) {
-
-#include <stdio.h> 
-#include <stdlib.h> 
-#include <string.h> 
- 
-char *ChargerChaine(int N) { 
-    char *chaine = (char *)malloc(N+1);  
-    printf("Entrez une chaine de %d caracteres: ", N); 
-    scanf("%d",N); 
-    fgets(chaine, N+1, stdin); 
-    chaine[strcspn(chaine, "\n")] = 0;  
-    return chaine; 
-} 
- 
-int Longueur(char *ch) { 
-    int i = 0; 
-    while (ch[i] != '\0') { 
-        i++; 
-    } 
-    return i; 
-} 
- 
 void ChargerTab(char *P, char Tab[]) { 
     strcpy(Tab, P); 
 } 
